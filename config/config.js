@@ -1,0 +1,1 @@
+module.exports.SEED = '@este_es@_unsecreto'
