@@ -20,7 +20,8 @@ var usuarioSchema = new Schema({
     required: true,
     default: "USER_ROLE",
     enum: rolesValidos
-  }
+  },
+  google: {type: Boolean, default:false}
 });
 usuarioSchema.plugin(uniqueValidator, { message: "{PATH} debe de ser único" });
 module.exports = mongoose.model("Usuario", usuarioSchema);
